@@ -1,6 +1,6 @@
 # Getting Started with CAMP COFFEE
 
-## Steps to download and start contributing
+<h2>Steps to download and start contributing</h2>
 
 1. Clone the project down to your local.  From your terminal, run
    <pre><code> git clone git@github.com:jdavault/camp-coffee.git 
@@ -41,25 +41,26 @@
 	</ul>
 5.  Once you have a few commits and feel like you are ready to collaborate with the team lead and do a PR
 	<pre><code> git push –set-upstream origin feature-another-homepage-change 
-   </code></pre>
-   <ul>
+   	</code></pre>
+   	<ul>
   		<li>
 			set upstream needed the first time .. you can also use -u instead 
 	  	</li>
 	</ul>
 6.  After your pull requests has been approved and merged you can delete it locally and from github
-     <pre><code> git checkout main
+     <pre><code>  git checkout main
 	  git pull 
 	  git branch -d [Name-of-localBranch]
 	  git push origin --delete [Name-of-RemoteBranch]
 	  git branch
-     </code></pre>
+   	</code></pre>
    	<ul>
-  			<li>
-				Usually the PR approver will delete the remote branch after approving the PR
-	  		</li>
-		</ul>
+  		<li>
+	Usually the PR approver will delete the remote branch after approving the PR
+	  	</li>
+	</ul>
 
+##
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
