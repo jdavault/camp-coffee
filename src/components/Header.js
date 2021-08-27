@@ -1,10 +1,10 @@
 import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
-import AboutUs from "./AboutUsPrev"
+import Home from "./Home"
+import AboutUs from "./AboutUs"
 import Coffee from "./Coffee"
 import ContactUs from "./ContactUs"
-import Home from "./Home"
 
 function Header() {
   return (
@@ -22,7 +22,7 @@ function Header() {
               <a href="/coffee">My Coffee</a>
             </li>
             <li>
-              <a href="/contactUs">Contact us</a>
+              <a href="/contact">Contact us</a>
             </li>
           </ul>
         </nav>
@@ -34,7 +34,7 @@ function Header() {
         <Route path="/coffee">
           <Coffee />
         </Route>
-        <Route path="/contactus">
+        <Route path="/contact">
           <ContactUs />
         </Route>
         <Route path="/">
