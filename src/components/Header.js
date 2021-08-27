@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 
 import Home from "./Home"
 import AboutUs from "./AboutUs"
@@ -13,33 +13,25 @@ function Header() {
         <nav>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="/coffee">My Coffee</a>
+              <Link to="/coffee">My Coffee</Link>
             </li>
             <li>
-              <a href="/contact">Contact us</a>
+              <Link to="/contact">Contact us</Link>
             </li>
           </ul>
         </nav>
       </header>
       <Switch>
-        <Route path="/about">
-          <AboutUs />
-        </Route>
-        <Route path="/coffee">
-          <Coffee />
-        </Route>
-        <Route path="/contact">
-          <ContactUs />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+        <Route component={AboutUs} path="/about" />
+        <Route component={Coffee} path="/coffee" />
+        <Route component={ContactUs} path="/contact" />
+        <Route component={Home} exact path="/" />
       </Switch>
     </Router>
   )
