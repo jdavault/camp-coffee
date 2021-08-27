@@ -2,6 +2,53 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Steps to download start contributing
+
+1. Clone the project down to your local.  From your terminal, run
+
+git clone git@github.com:jdavault/ampconsulting-react.git 
+
+2. Change your directory and run these two commands
+   
+cd camp-coffee
+yarn install
+yarn start
+
+3. BEFORE MAKING any CHANGES, do the steps below (see what branches you have and create a feature branch)
+
+git branch -a
+git checkout -b feature-some-descriptive-name
+
+-	Give branch descriptive name (https://codingsight.com/git-branching-naming-convention-best-practices)
+
+-	Note, -b creates the branch, but if the branch has already been created  you can leave that off
+
+4. Make a few changes and then do a commit 
+
+git status
+git add .
+git status 
+git commit -m “Some descriptive info about your changes”
+
+-	Note, you can us add . or add each file separately
+
+5.  Once you have a few commits and feel like you are ready to collaborate with the team lead and do a PR
+
+git push –set-upstream origin feature-another-homepage-change 
+
+-	Note, you only have to add the upstream argument the first time .. you can also use -u instead of –set-upstream
+
+6.  After your pull requests has been approved and merged you can delete it locally and from github
+
+  git checkout main
+  git pull 
+  git branch -d [Name-of-localBranch]
+  git push origin --delete [Name-of-RemoteBranch]
+  git branch
+
+- Usually the PR approver will delete the remote branch after approving the PR
+
+
 ## Available Scripts
 
 In the project directory, you can run:
