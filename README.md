@@ -1,8 +1,6 @@
 # Getting Started with CAMP COFFEE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Steps to download start contributing
+## Steps to download and start contributing
 
 1. Clone the project down to your local.  From your terminal, run
    <pre><code> git clone git@github.com:jdavault/camp-coffee.git 
@@ -61,6 +59,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 				Usually the PR approver will delete the remote branch after approving the PR
 	  		</li>
 		</ul>
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
