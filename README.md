@@ -12,7 +12,7 @@
 	yarn start
    </code></pre>
 
-3. BEFORE MAKING any CHANGES, do the steps below (see what branches you have and create a feature branch)
+3. BEFORE MAKING any CHANGES, do the steps below.  Get your main branch current (git pull), and then create a feature branch)
    <pre><code> git checkout main
 	git pull
 	git checkout -b feature-some-descriptive-name
