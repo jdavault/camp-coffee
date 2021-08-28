@@ -40,7 +40,7 @@
 	  	</li>
 	</ul>
 5.  Once you have a few commits and feel like you are ready to collaborate with the team lead and do a PR
-	<pre><code> git push –set-upstream origin feature-another-homepage-change 
+	<pre><code> git push –set-upstream origin feature-some-descriptive-name
    	</code></pre>
    	<ul>
   		<li>
@@ -50,8 +50,8 @@
 6.  After your pull requests has been approved and merged you can delete it locally and from github
      <pre><code>  git checkout main
 	  git pull 
-	  git branch -d [Name-of-localBranch]
-	  git push origin --delete [Name-of-RemoteBranch]
+	  git branch -d feature-some-descriptive-name
+	  git push origin --delete feature-some-descriptive-name
 	  git branch
    	</code></pre>
    	<ul>
