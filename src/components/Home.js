@@ -1,6 +1,6 @@
 import React from "react"
 import CoffeeImg from "./CoffeeImg"
-import { COFFEE_IMG_DESCRIP } from "..shared/coffee-img-descrip"
+import { COFFEE_IMG_DESCRIP } from "../shared/coffee-img-descrip"
 
 function Home() {
   const coffeeImgDescrip = COFFEE_IMG_DESCRIP

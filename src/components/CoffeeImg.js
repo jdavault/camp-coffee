@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 
 export default function CoffeeImg({ coffeeImg }) {
     return (
@@ -8,8 +9,9 @@ export default function CoffeeImg({ coffeeImg }) {
                     {coffeeImg.map(coffeeImg => {
                         return (
                             <div key={coffeeImg.id}>
-                                <a>  {coffeeImg.image} </a>
-                                <p> {coffeeImg.type} </p>
+                                <img src={coffeeImg.image} width={200} height={200}
+                                />
+                                <h3> {coffeeImg.type} </h3>
                                 <p> {coffeeImg.description} </p>
                             </div>
                         )
