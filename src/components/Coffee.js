@@ -1,6 +1,10 @@
 import React from "react"
+import CoffeeTypes from "./CoffeeTypes"
+import { COFFEE_TYPE_DATA } from "../shared/coffee-type-data"
 
 function Coffee() {
+  const coffeeTypeData = COFFEE_TYPE_DATA
+
   return (
     <>
       <section>
@@ -61,52 +65,8 @@ function Coffee() {
         </p>
       </section>
 
-      <section>
-        <h2>Coffee Types</h2>
+      <CoffeeTypes coffeeTypes={coffeeTypeData} />
 
-        <table>
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Contact</th>
-              <th>Country</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>Arabica</td>
-              <td>Maria</td>
-              <td>Germany</td>
-            </tr>
-            <tr>
-              <td>Robusta</td>
-              <td>Francisco</td>
-              <td>Mexico</td>
-            </tr>
-            <tr>
-              <td>Cappuccino</td>
-              <td>Roland</td>
-              <td>Austria</td>
-            </tr>
-            <tr>
-              <td>Americano</td>
-              <td>Helen</td>
-              <td>UK</td>
-            </tr>
-            <tr>
-              <td>Espresso</td>
-              <td>Yoshi</td>
-              <td>Canada</td>
-            </tr>
-            <tr>
-              <td>Doppio</td>
-              <td>Giovanni</td>
-              <td>Italy</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
       <section id="coffee">
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
