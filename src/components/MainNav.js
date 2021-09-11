@@ -17,6 +17,9 @@ export default function MainNav() {
         <li>
           <Link to="/contact">Contact us</Link>
         </li>
+        <li>
+          <Link to="/register">Register</Link>
+        </li>
       </ul>
     </nav>
   )
